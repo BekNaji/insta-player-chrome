@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Video Player",
+  "version": "1.0.0",
+  "description": "Custom control panel for Instagram videos (feed, Reels, posts, stories): play/pause, seek, speed, volume and keyboard shortcuts.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
